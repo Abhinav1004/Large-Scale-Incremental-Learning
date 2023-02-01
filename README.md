@@ -2,9 +2,11 @@
 
 Modern machine learning suffers from catastrophic forgetting when learning new classes incrementally. The performance dramatically degrades due to the missing data of old classes. Incremental learning methods have been proposed to retain the knowledge acquired from the old classes, by using knowledge distilling and keeping a few exemplars
 from the old classes. However, these methods struggle to scale up to a large number of classes. 
-We believe this is because of the combination of two factors: 
-	(a) the data imbalance between the old and new classes, and 
-	(b) the increasing number of visually similar classes. 
+We believe this is because of the combination of two factors:   
+	
+	(a) the data imbalance between the old and new classes, and     
+	(b) the increasing number of visually similar classes.  
+
 Distinguishing between an increasing number of visually similar classes is particularly challenging, when the training data is unbalanced. We propose a simple and effective method to address this data imbalance issue. We found that the last fully connected layer has a strong bias towards the new classes, and this bias can be corrected by a linear model.
 
 ![](/images/incremental_learning.png)
